@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Fabulous50";
+  src: url("../fonts/fabulous50.ttf")   format("truetype");
+} 
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Thin.woff2") format("woff2");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+html{
+  border:20px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+:root {
+  --blue: #29ABE2;
+  --light: #ffffff;
+  --dark: #000000;
+  --lightGrey: #d8d8d8;
+  --lightGray: var(--lightGrey);
+  --imGoingToFaint: #fbfbfb;
+  --maxWidth: 1200px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #29ABE2;
+  border-radius: 5px;
+}
+
+body{
+  background-image: url('../images/background-paint.png');
+  font-size: 18px;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 300;
+}
+
+header{
+  background-color: #ffffff;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  border: 0px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: #29ABE2;
+}
+
+footer{
+  margin-top: 20px;
+  padding: 40px 0px;
+  background-color: #ffffff;
+  border: 0px;
+  border-top: 3px;
+  border-style: solid;
+  border-color: #29ABE2;
+}
+
+/* header a{
+  text-decoration: none;
+  color: #666666;
+  font-family: 'Fabulous50', sans-serif; 
+  font-weight: 500;
+  font-size: 32px;
+}
+
+header a:hover{
+  text-decoration: underline;
+  text-decoration-color: #29ABE2;
+  color: #666666;
+}
+
+header a:active{
+  
+  color: #666666;
+} */
+
+.link-header-jucarlospm{
+  color: #666666;
+  text-decoration: none;
+  text-decoration-color: #29ABE2;
+  font-family: 'Fabulous50', sans-serif; 
+  font-size: 32px;
+}
+
+.link-header-jucarlospm:hover{
+  color: #666666;
+  text-decoration: underline;
+  text-decoration-color: #29ABE2;
+
+}
+
+.link-header-active-jucarlospm{
+  color: #000000;
+  text-decoration: none;
+  text-decoration-color: #29ABE2;
+  background-image: url(../images/squared.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.body-jucarlospm{
+  background-color: #FFFFFF;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+h1, h2{
+  font-family: 'Fabulous50', sans-serif;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'SFProDisplay', sans-serif;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+h1{
+  background-image: url(../images/squared.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  font-size: 64px;
+}
+
+p{
+  font-size: 18px;
+  /* font-family: 'SFProDisplay', sans-serif; */
+  font-weight: 300;
+}
+
+.card{
+  border:0px;
+  border-radius: 0px;
+}
+
+.tecnologia-jucarlospm{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300 !important;
+}
+
+@media (max-width: 768px) {
+  html{
+    border:8px;
+    border-style: solid;
+    border-color: #000000;
+  }
+}
