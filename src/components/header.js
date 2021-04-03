@@ -6,6 +6,7 @@ import styled, { css } from 'styled-components';
 const NavStyles = styled.nav`
   border-bottom: 5px solid var(--blue);
   display: grid;
+  background: var(--light);
   h1 {
     display: grid;
     justify-items: center;
@@ -40,7 +41,6 @@ const NavUl = styled.ul`
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background: var(--light);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -70,6 +70,9 @@ const NavLi = styled.li`
       }
     `}
   a {
+    &:before {
+      height: 0px;
+    }
     font-size: 3.5rem;
     font-family: 'Fabulous50';
     color: var(--dark);
@@ -144,99 +147,3 @@ export default function Header() {
     </NavStyles>
   );
 }
-
-// const Header = () => {
-//   return ( 
-//     // <header className="position-sticky">
-//     //     <Navbar>
-//     //       <Container className="d-flex justify-content-around">
-//     //         <Nav className="d-none d-md-flex w-100 justify-content-around">
-//     //           <Link to={'/about-me'} className="link-header-jucarlospm" activeClassName={'link-header-active-jucarlospm'}>Sobre mi</Link>
-//     //           <Link to={'/projects'} className="link-header-jucarlospm" activeClassName={'link-header-active-jucarlospm'}>Proyectos</Link>
-//     //         </Nav>
-//     //         <div>
-//     //           <Link to={'/'}><Image src={Logo} width="150px"/></Link>
-//     //         </div>
-//     //         <Nav className="d-none d-md-flex w-100 justify-content-around">
-//     //           <Link to={'/blog'} className="link-header-jucarlospm" activeClassName={'link-header-active-jucarlospm'}>Blog</Link>
-//     //           <Link to={'/contact-me'} className="link-header-jucarlospm" activeClassName={'link-header-active-jucarlospm'}>Contacto</Link>
-//     //         </Nav>
-//     //       </Container>
-//     //     </Navbar>
-//     // </header>
-//     <NavUl ref={ref}>
-//         <NavLi row={getRow(0)}>
-//           <Link to="/courses">
-//             <small className="top">free + premium</small>
-//             <H as="span">Courses</H>
-//             <small className="bottom hideYoSelf">x</small>
-//           </Link>
-//         </NavLi>
-//         <NavLi row={getRow(1)}>
-//           <a href="https://syntax.fm" target="_blank" rel="noreferrer noopener">
-//             <small className="top">The Syntax</small>
-//             <H as="span">Podcast</H>{' '}
-//             <small className="bottom">Web Development</small>
-//           </a>
-//         </NavLi>
-//         <NavLi row={getRow(2)}>
-//           <Link to="/about">
-//             <small className="top">more</small>
-//             <H as="span">About</H>
-//             <small className="bottom">me</small>
-//           </Link>
-//         </NavLi>
-
-//         <NavLi row={getRow(3)}>
-//           <Link
-//             to="/blog"
-//             className={
-//               pageContext.collection === 'post' &&
-//               !pageContext.slug.includes('uses')
-//                 ? 'current-parent'
-//                 : null
-//             }
-//           >
-//             <small className="top">the</small>
-//             <H as="span">Blog</H>
-//             <small className="bottom hideYoSelf">x</small>
-//           </Link>
-//         </NavLi>
-//         <NavLi row={getRow(4)}>
-//           <Link
-//             to="/tips"
-//             className={
-//               pageContext.collection === 'tip' ? 'current-parent' : null
-//             }
-//           >
-//             <small className="top">🔥</small>
-//             <H as="span">Tips</H>
-//             <small className="bottom">real spicy</small>
-//           </Link>
-//         </NavLi>
-//         <NavLi row={getRow(5)}>
-//           <Link to="/speaking-and-training">
-//             <small className="top">real life</small>
-//             <H as="span">Speaking</H>{' '}
-//             <small className="bottom">and training</small>
-//           </Link>
-//         </NavLi>
-//         <NavLi row={getRow(6)}>
-//           <Link to="/uses">
-//             <small className="top">what font?!</small>
-//             <H as="span">/uses</H>{' '}
-//             <small className="bottom">what theme!?</small>
-//           </Link>
-//         </NavLi>
-//         <NavLi row={getRow(7)}>
-//           <Link to="/contact">
-//             <small className="top">You want to</small>
-//             <H as="span">Contact</H>
-//             <small className="bottom">me</small>
-//           </Link>
-//         </NavLi>
-//       </NavUl>
-//    );
-// }
- 
-// export default Header;

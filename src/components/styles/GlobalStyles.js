@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
     --blue: #29ABE2;
     --light: #ffffff;
     --dark: #000000;
-    --lightGrey: #d8d8d8;
+    --lightGrey: #F2F4F9;
     --lightGray: var(--lightGrey);
     --imGoingToFaint: #fbfbfb;
     --maxWidth: 1200px;
@@ -102,6 +102,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--dark);
   }
   p, ul, ol {
+    margin-top:0px;
     line-height: 1.5;
     font-weight: 300;
   }
@@ -116,15 +117,13 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     &:before {
       /* display: inline-block; */
-      height: 5px;
+      height: 4px;
       position: absolute;
       background: var(--blue);
       content: '';
       width: 100%;
       bottom: -2px;
-      z-index: -1;
       transition: transform 0.1s;
-      transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
     }
     &:hover {
       --scaleX: 1.03;
@@ -149,8 +148,6 @@ const GlobalStyles = createGlobalStyle`
   pre[data-language] {
     border-radius: 0;
     padding: 3rem;
-    width: 110%;
-    margin-left: -5%;
     line-height: 1.5;
 
   }
@@ -158,8 +155,9 @@ const GlobalStyles = createGlobalStyle`
     white-space: break-spaces;
   }
   code, kbd, samp {
-    font-family: 'HCo Operator Mono';
+    font-family: Consolas;
     font-weight: 300;
+    font-size:18px
   }
 
   video {

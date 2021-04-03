@@ -3,6 +3,11 @@ import styled from 'styled-components';
 const PostGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  border: 5px #29ABE2;
+  border-style: solid;
+  padding: 20px;
+  background: #fff;
+  margin: 0 auto;
 `;
 
 const PostGridItem = styled.div`

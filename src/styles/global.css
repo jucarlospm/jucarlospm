@@ -67,51 +67,12 @@ html{
 }
 
 body{
-  background-image: url('../images/background-paint.png');
+  background-color: #F2F4F9;
+  /* background-image: url('../images/background-paint.png'); */
   font-size: 18px;
   /* font-family: 'Open Sans', sans-serif; */
   font-weight: 300;
 }
-
-header{
-  background-color: #ffffff;
-  padding: 20px 0px;
-  margin-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
-  border: 0px;
-  border-bottom: 3px;
-  border-style: solid;
-  border-color: #29ABE2;
-}
-
-footer{
-  margin-top: 20px;
-  padding: 40px 0px;
-  background-color: #ffffff;
-  border: 0px;
-  border-top: 3px;
-  border-style: solid;
-  border-color: #29ABE2;
-}
-
-/* header a{
-  text-decoration: none;
-  color: #666666;
-  font-family: 'Fabulous50', sans-serif; 
-  font-weight: 500;
-  font-size: 32px;
-}
-
-header a:hover{
-  text-decoration: underline;
-  text-decoration-color: #29ABE2;
-  color: #666666;
-}
-
-header a:active{
-  
-  color: #666666;
-} */
 
 .link-header-jucarlospm{
   color: #666666;
@@ -138,9 +99,10 @@ header a:active{
 }
 
 .body-jucarlospm{
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   z-index: 10;
-  max-width: 800px;
+  max-width: 960px;
+  padding:   40px 20px 40px 20px;
   margin: 0px auto;
 }
 

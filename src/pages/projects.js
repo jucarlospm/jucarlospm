@@ -23,7 +23,7 @@ export default function ProjectsPage({
       <p>
         Hot tips are spicy lil' nuggets related to web development and tooling
         that I share on{' '}
-        <a href="https://twitter.com/wesbos">my twitter account</a>. I've logged
+        <a href="https://twitter.com/jucarlospm">my twitter account</a>. I've logged
         them here to make them easier to find.
       </p>
       <Pagination

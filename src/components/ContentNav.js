@@ -6,13 +6,13 @@ import styled from 'styled-components';
 const ContentNavStyles = styled.div`
   --borderColor: var(--lightGrey);
   --borderColor: black;
+  background: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
   grid-template-rows: auto auto;
-  border: 1.5px solid var(--borderColor);
   border-radius: 1rem;
   margin: 4rem 0;
   a {

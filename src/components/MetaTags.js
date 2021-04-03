@@ -14,7 +14,7 @@ function getBaseURL() {
 const baseURL = getBaseURL();
 
 export function PostMetaTags({ post }) {
-  const canonical = pathJoin('https://wesbos.com', post.frontmatter.slug);
+  const canonical = pathJoin('https://jucarlospm.com', post.frontmatter.slug);
   const url = pathJoin(baseURL, post.frontmatter.slug);
   const thumbnailData = {
     title: post.frontmatter.title,
@@ -31,10 +31,10 @@ export function PostMetaTags({ post }) {
   return (
     <Helmet>
       <link rel="canonical" href={canonical} />
-      <meta name="generator" content="Wes Bos on Gatsby!" />
+      <meta name="generator" content="Juan Carlos Peña on Gatsby!" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@wesbos" />
-      <meta name="twitter:creator" content="@wesbos" />
+      <meta name="twitter:site" content="@jucarlospm" />
+      <meta name="twitter:creator" content="@jucarlospm" />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={post.frontmatter.title} />
       <meta name="twitter:description" content={post.excerpt} />
@@ -50,18 +50,18 @@ export function PostMetaTags({ post }) {
         />
       ) : null}
 
-      <meta property="og:site_name" content="Wes Bos" />
+      <meta property="og:site_name" content="Juan Carlos Peña" />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_CA" />
-      <title>{post.frontmatter.title} - Wes Bos</title>
+      <title>{post.frontmatter.title} - Juan Carlos Peña</title>
     </Helmet>
   );
 }
 
 export function TipsMetaTags({ post }) {
-  const canonical = `https://wesbos.com/tip/${post.frontmatter.slug}`;
+  const canonical = `https://jucarlospm.com/projects/${post.frontmatter.slug}`;
   const url = `${baseURL}/tip/${post.frontmatter.slug}`;
   const thumbnailData = {
     title: post.excerpt,
@@ -78,10 +78,10 @@ export function TipsMetaTags({ post }) {
   return (
     <Helmet>
       <link rel="canonical" href={canonical} />
-      <meta name="generator" content="Wes Bos on Gatsby!" />
+      <meta name="generator" content="Juan Carlos Peña on Gatsby!" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@wesbos" />
-      <meta name="twitter:creator" content="@wesbos" />
+      <meta name="twitter:site" content="@jucarlospm" />
+      <meta name="twitter:creator" content="@jucarlospm" />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={post.frontmatter.title} />
       <meta name="twitter:description" content={post.excerpt} />
@@ -94,12 +94,12 @@ export function TipsMetaTags({ post }) {
         property="article:published_time"
         content={new Date(post.frontmatter.date).toISOString()}
       />
-      <meta property="og:site_name" content="Wes Bos" />
+      <meta property="og:site_name" content="Juan Carlos Peña" />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_CA" />
-      <title>{post.frontmatter.title} - Wes Bos</title>
+      <title>{post.frontmatter.title} - Juan Carlos Peña</title>
     </Helmet>
   );
 }

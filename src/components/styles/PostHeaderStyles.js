@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 const PostHeaderStyles = styled.header`
+  margin-bottom: 20px;
   h1 {
     margin-bottom: 0;
   }
   .postMeta {
+    margin-top: 10px;
     font-size: 1.4rem;
     display: grid;
     grid-gap: 1rem;

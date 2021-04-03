@@ -55,8 +55,7 @@ const HStyles = styled.h1`
     }
   }
 
-  &:before {
-    /* Yellow square is using ems so it scales up/down with the font size */
+  &:hover:before {
     width: 0.75em;
     height: 0.75em;
     content: '';
@@ -75,8 +74,12 @@ const HStyles = styled.h1`
   }
   a {
     color: inherit;
-    text-decoration-color: var(--blue);
-  }
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--blue);
+    }
+  }  
   .hash-anchor {
     position: absolute;
     transform: translateX(-120%);
