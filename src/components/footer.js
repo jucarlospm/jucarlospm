@@ -110,6 +110,11 @@ const Footer = () => {
         <FooterItem>
           <h2>Stay Updated</h2>
           <p>Subscribe to our newsletter to get our latest news.</p>
+          <p>
+            Antes de empezar me gustaría exaltar el nombre de Dios, ya que por
+            él es quien soy lo que soy actualmente. Agradecer a mis padres y a
+            todas las personas que han confiado en mí. Ok, ahora si comencemos…
+          </p>
           <form>
             <input type="email" name="email" placeholder="Enter email address"/>
             <input type="submit" value="Subscribe"/>

@@ -5,15 +5,22 @@ import Img from '../components/Img';
 
 import WidgetInstagram from "../components/widgetInstagram"
 import styled from 'styled-components';
+import { PostMetaTags } from '../components/MetaTags';
+import { Helmet } from 'react-helmet';
 
 const FlexboxContainer = styled.div`
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
+  padding: 20px;
   div {
-    width: 50%;
+    width: 70%;
     &:first-child {
+      margin: auto 0;
       margin-right: 20px;
+    }
+    &:last-child {
+      width: 30%;
     }
   }
 `;
@@ -21,13 +28,18 @@ const FlexboxContainer = styled.div`
 const Title = styled.h1`
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: 'Fabulous50';
-  font-weight: 300;
-  font-size: 80px;
+  line-height: 9rem;
+  font-weight: 800;
+  font-size: 7rem;
+
+  span {
+    background: -webkit-linear-gradient( -70deg,rgb(179 240 249),rgb(41 171 226));
+    background-image: -webkit-linear-gradient( -70deg,rgb(179 240 249),rgb(41 171 226));
+  }
 `;
 
 const Subtitle = styled.h2`
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'SFProDisplay', sans-serif;
   font-weight: 700 !important;
@@ -46,30 +58,41 @@ const Box = styled.div`
 export default function HomePage({ data, path }) {
   return (
     <Layout>
+      <PostMetaTags
+        post={{
+          frontmatter: {
+            slug: path,
+            title: 'Juan Carlos Peña',
+          },
+        }}
+      />
+      <Helmet
+        htmlAttributes={{ lang: 'es' }}
+        title="Juan Carlos Peña - Desarrollador Full Stack"
+      />
       <FlexboxContainer>
-        <Title>Hola, soy Juan Carlos...</Title>
+        <div>
+          <Title>Hola, soy <br/><span>Juan Carlos Peña</span></Title>
+          <Subtitle>y soy un Desarrollador Full-Stack</Subtitle>
+        </div>
         <Img
-          image={data.jucarlospm}
-          alt="Juan Carlos Peña"
-        />
+            image={data.jucarlospm}
+            alt='Juan Carlos Peña'
+          />
       </FlexboxContainer>
       <Box>
-        <Subtitle>Algunos de mis proyectos...</Subtitle>
+        <Subtitle>Hablemos un poco de mi...</Subtitle>
         <div>  
             <p>
-              Antes de empezar me gustaría exaltar el nombre de Dios, ya que por
-              él es quien soy lo que soy actualmente. Agradecer a mis padres y a
-              todas las personas que han confiado en mí. Ok, ahora si comencemos…
-            </p>
-            <p>
-              Hola, mi nombre es Juan Carlos Peña Merlano (Ya se que lo dije
-              arriba, pero pos si las moscas). Soy un desarrollador web de la
+              Hola, mi nombre es Juan Carlos Peña Merlano (ya se que lo dije
+              arriba, pero pos si las moscas). Soy un desarrollador web full stack de la
               ciudad de Cartagena, Colombia.
             </p>
             <p>
-              Realizar aplicaciones en entornos web y sitios webs corporativos es
-              mi pasión, y deseo que tu empresa, marca o proyecto personal haga
-              parte de mi legado de trabajos.
+              Todo lo que tenga <code>codigo</code> de por medio es mi pasión, aplicaciones en entornos 
+              web, sitios webs corporativos, hasta un jueguito de triqui (tres en raya)
+              disfruto hacer. Mi mayor deseo que tu empresa, marca o proyecto personal 
+              haga parte de mi legado de trabajos.
             </p>
             <p>
               Te invito a que conozcas más de mí, de mis proyectos, des un paso a
@@ -78,7 +101,7 @@ export default function HomePage({ data, path }) {
             </p>
           </div>
         </Box>
-      <WidgetInstagram />
+      {/* <WidgetInstagram /> */}
     </Layout>
   )
 }
