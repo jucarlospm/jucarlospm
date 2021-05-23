@@ -59,16 +59,16 @@ export default function Pagination({
         disabled={prevPage <= 0 ? true : null}
         to={`${pathPrefix}${prevPage}`}
       >
-        ← Prev 10 please
+        {prevPage <= 0 ? `El inicio del camino` : `← 10 Publicaciones Menos`}
       </Link>
       <p>
-        Page {currentPage} of {totalPages}
+        Página {currentPage} de {totalPages}
       </p>
       <Link
         disabled={nextPage > totalPages ? true : null}
         to={nextPage > totalPages ? null : `${pathPrefix}${nextPage}`}
       >
-        {nextPage > totalPages ? `That's all Folks` : `10 More please →`}
+        {nextPage > totalPages ? `No hay mas... por ahora` : `10 Publicaciones Mas →`}
       </Link>
     </PaginationStyles>
   );

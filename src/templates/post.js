@@ -25,6 +25,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         slug
+        dateLocal:date(formatString: "MMMM DD, YYYY", locale: "es")
         date(formatString: "MMMM DD, YYYY")
         image {
           ...ImageFields
@@ -58,7 +59,7 @@ function PostTemplate({ data: { mdx: post }, scope, pageContext }) {
           <PostMetaTags post={post} />
           <H>{post.frontmatter.title}</H>
           <div className="postMeta">
-            <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+            <time dateTime={post.frontmatter.dateLocal}>{post.frontmatter.dateLocal}</time>
             <span>{post.frontmatter.category.join(', ')}</span>
           </div>
         </PostHeaderStyles>

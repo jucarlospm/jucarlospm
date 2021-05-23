@@ -12,6 +12,9 @@ const PostHeaderStyles = styled.header`
     grid-gap: 1rem;
     grid-auto-flow: column;
     justify-content: start;
+    time {
+      text-transform: capitalize;
+    }
     & > * {
       :not(:last-child):after {
         content: '×';

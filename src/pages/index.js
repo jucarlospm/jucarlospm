@@ -7,6 +7,7 @@ import WidgetInstagram from "../components/widgetInstagram"
 import styled from 'styled-components';
 import { PostMetaTags } from '../components/MetaTags';
 import { Helmet } from 'react-helmet';
+import Box from '../components/mdxComponents/Box';
 
 const FlexboxContainer = styled.div`
   display: -ms-flex;
@@ -45,14 +46,6 @@ const Subtitle = styled.h2`
   font-weight: 700 !important;
   font-weight: 300;
   font-size: 32px;
-`;
-
-const Box = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 20px 0px;
-  padding: 20px;
-  background: #fff;
 `;
 
 export default function HomePage({ data, path }) {

@@ -1,46 +1,32 @@
 import React from 'react';
 import Layout from '../components/layout'
+import { Helmet } from 'react-helmet';
+import H from '../components/mdxComponents/Headings';
+import Box from '../components/mdxComponents/Box';
 
-const ContactMePage = () => {
+export default function ContactMePage() {
   return ( 
     <Layout>
-      <h1>Contacto</h1>
-      {/* <Form>
-        <Form.Row>
-          <Form.Group as={Col} controlId="formBasicName">
-            <Form.Label>Nombre completo</Form.Label>
-            <Form.Control type="text" placeholder="Ingresa nombre" required />
-          </Form.Group>
+      <Helmet>
+        <title>{`Contactame — Juan Carlos Peña`}</title>
+      </Helmet>
+      <H>🔥 Contactame</H>
+      <H as='h3'>
+        ¿Tienes alguna duda o solicitud? Ponte en contacto y hagamos tus proyecto web una realidad
+      </H>
+      <Box>
+        <H as='h3'>Formulario de contacto</H>
+        <form>
+          <input type='text' placeholder='Nombre completo' required="required"/>
+          <input type='text' placeholder='Empresa'/>
+          <input type='email' placeholder='Correo electronico' required="required"/>
+          <input type='text' placeholder='Numero telefonico'/>
+          <input type='text' placeholder='Asunto' required="required"/>
+          <textarea rows="4"placeholder="Mensaje" required="required"/>
+          <button type="submit" value='Enviar'>Enviar</button>
 
-          <Form.Group as={Col} controlId="formBasicCompanyName">
-            <Form.Label>Empresa</Form.Label>
-            <Form.Control type="text" placeholder="Empresa" />
-          </Form.Group>
-        </Form.Row>
-        <Form.Row>
-          <Form.Group as={Col} controlId="formBasicEmail">
-            <Form.Label>Correo</Form.Label>
-            <Form.Control type="text" placeholder="Correo" required/>
-          </Form.Group>
-          <Form.Group as={Col} controlId="formBasicPhone">
-            <Form.Label>Telefono</Form.Label>
-            <Form.Control type="text" placeholder="Telefono" />
-          </Form.Group>
-        </Form.Row>
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Asunto</Form.Label>
-          <Form.Control type="text" placeholder="Asunto" required/>
-        </Form.Group>
-        <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Mensaje</Form.Label>
-          <Form.Control as="textarea" rows={3} required/>
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form> */}
+        </form>
+      </Box>
     </Layout>
    );
 }
- 
-export default ContactMePage;
