@@ -1,5 +1,5 @@
 ![banner-jucarlospm2](https://user-images.githubusercontent.com/67056384/168216926-1bae9443-2d25-4072-bb8c-aad51f5baf8c.jpg)
-<h1> Hi! Welcome to my Github Page <img src="https://user-images.githubusercontent.com/67056384/168215036-68d972d2-51aa-45aa-b8b5-723dd0ba5b3a.png" width="30"/></h1>
+<h1> Hello there <img src="https://user-images.githubusercontent.com/67056384/168215036-68d972d2-51aa-45aa-b8b5-723dd0ba5b3a.png" width="30"/></h1>
 
 <h3>Things I code with</h3>
 <p>
