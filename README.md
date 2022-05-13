@@ -1,6 +1,26 @@
 ![banner-jucarlospm2](https://user-images.githubusercontent.com/67056384/168216926-1bae9443-2d25-4072-bb8c-aad51f5baf8c.jpg)
 <h1> Hello there <img src="https://user-images.githubusercontent.com/67056384/168215036-68d972d2-51aa-45aa-b8b5-723dd0ba5b3a.png" width="30"/></h1>
 
+### A little more about me...  
+```javascript
+const jucarlospm = {
+    fullName: "Juan Carlos Peña Merlano",
+    createAt: 804056400,
+    currentLocation: "Cartagena, Colombia",
+    code: ["Javascript", "PHP"],
+    askMeAbout: ["web dev", "tech", "backend dev", "frontend dev", "gamer", "bots"],
+    technologies: {
+        backEnd: {
+            js: ["Node", "Express"],
+        },
+        frontEnd: {
+            js: ["React"]
+        },
+        devOps: ["AWS", "Docker🐳", "Nginx"],
+        databases: ["mongo", "MySql", "Postgres"],
+    },
+};
+```
 <h3>Things I code with</h3>
 <p>
   <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-EFD81B?style=flat-square&logo=javascript&logoColor=white" />
